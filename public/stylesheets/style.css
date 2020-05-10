@@ -1,0 +1,31 @@
+body {
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  background: url("../images/PurpleBrick.jpg");
+}
+
+.nav{
+  background: transparent !important;
+  position: absolute;
+}
+
+.navbar{
+  z-index: 1;
+  box-shadow: none !important;
+}
+
+.nav-item{
+  text-transform: uppercase;
+  font-size: 24px;
+  text-shadow: 6px -2px 6px #CC00CC, 1px 1px 4px #fff;
+  letter-spacing: 5px;
+}
+
+
+.navbar .dropdown-menu {
+  background: #fff;
+}
+
+.navbar .dropdown-menu a{
+  text-shadow: none;
+}
+
