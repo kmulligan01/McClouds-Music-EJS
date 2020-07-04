@@ -1,0 +1,97 @@
+.portfolio{
+    padding: 100px 0;
+    width: 90%;
+    margin: 0 auto;
+}
+
+
+.section {
+    color: #fff;
+    text-shadow: 6px -2px 6px #CC00CC, 1px 1px 4px #15F4EE;
+    font-family: 'Permanent Marker', cursive;
+    letter-spacing: 3px;
+}
+
+.section .top-side {
+	text-align: center;
+}
+
+
+.section .top-side h2 {
+    text-shadow: 6px -2px 6px #CC00CC, 1px 1px 4px #15F4EE;
+    font-weight: 800;
+    font-style: italic;
+    margin: 20px 0;
+    color: #fff;
+    font-size: 60px;
+    font-family: 'Permanent Marker', cursive;
+}
+
+.section.portfolio .filters {
+	text-align: center;
+	margin-top: 50px;
+}
+
+.section.portfolio .filters ul {
+	padding: 0;
+}
+
+.section.portfolio .filters ul li {
+	list-style: none;
+	display: inline-block;
+	padding: 20px 30px;
+	cursor: pointer;
+	position: relative;
+}
+
+.section.portfolio .filters ul li:after {
+	content: '';
+	display: block;
+	width: calc(0% - 60px);
+	position: absolute;
+	height: 2px;
+	background: #15F4EE;
+	transition: width 350ms ease-out;
+}
+
+.section.portfolio .filters ul li:hover:after {
+	width: calc(100% - 60px);
+	transition: width 350ms ease-out;
+}
+
+.active:after {
+	width: calc(100% - 60px);
+}
+
+.section.portfolio .filters-content {
+	margin-top: 50px;
+}
+
+.section.portfolio .filters-content .show {
+	opacity: 1;
+	visibility: visible;
+	transition: all 350ms;
+}
+
+.section.portfolio .filters-content .hide {
+	opacity: 0;
+	visibility: hidden;
+	transition: all 350ms;
+}
+
+.section.portfolio .filters-content .item {
+	text-align: center;
+	cursor: pointer;
+	margin-bottom: 30px;
+}
+
+.section.portfolio .filters-content .item img {
+	width: 100%;
+	max-width: 300px;
+	height: 300px;
+	margin: 20px;
+}
+
+
+
+    

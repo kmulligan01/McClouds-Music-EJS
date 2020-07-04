@@ -5,16 +5,264 @@
     <link rel="stylesheet" href="./stylesheets/home.css">
     <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet"> 
 </head>
-<body>
-    
+<body >
+  <div id="wrap">
+
+ 
 <%include partials/menu %>
 
-<%include partials/video %>
+<!--Jumbotron/intro-->
+<div class="jumbotron">
+  <div class="overlay"></div>
+  <div class="inner">
+    <div class="row">
+      <div class="col-md-6" style="text-align: left;">
+      <h1>BEST MUSIC IN THE MILE HIGH CITY</h1>
+      <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem repellendus quasi fuga nesciunt iste.</p>
+      <hr class="my-4">
+      <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
+      <p class="lead">
+        <a class="btn btn-white" href="/calendar">Events</a>
+        <a class="btn btn-outline" href="/contact">Contact Me</a>
+      </p>
+      </div>
+      <div class="col-md-6">
+        <img src="../images/steveHomeImg.jpg" alt="Home Image" class="img-fluid homeImg">
+      </div>
+  </div>
+  </div>
+</div>
+
+
+    
+    <!--About Section-->
+    <div class="aboutSection">
+        <div class="container">
+          <h1 class="homeText" >ABOUT ME</h1>
+<hr />
+    <div class="row">
+        <div class="col-md-6 aboutMe">
+            <h1>Talk About Company here</h1>
+            <p>some text here</p>
+        </div>
+        <div class="col-md-6">
+            <img class="neonFlag" alt="colorado flag" src="./images/COFlag.png" />
+        </div>
+    </div>
+  </div>
+          <!--Grid row-->
+        </div>
+      </main>
+
+
+      <!--Services Section-->
+<div class="services">
+<div class="container">
+  <h1 class="homeText" >SERVICES</h1>
+<hr />
+    <div class="row">
+        <div class="col-md-4">
+      <div class="card__collection clear-fix">
+    <div class="cards cards--three">
+        <img src="./images/karaoke.jpg" class="img-responsive" alt="">
+        <span class="cards--three__rect-1">
+          <span class="shadow-1"></span>
+          <a href="/karaoke">Karaoke</a>
+        </span>
+        <span class="cards--three__rect-2">
+          <span class="shadow-2"></span>
+        </span>
+        <span class="cards--three__circle"></span>
+        <ul class="cards--three__list">
+          <li><i class="fab fa-facebook-f"></i></li>
+          <li><i class="fab fa-twitter"></i></li>
+          <li><i class="fab fa-linkedin-in"></i></li>
+        </ul>
+      </div>
+    </div>
+    </div>
+
+    <div class="col-md-4">
+        <div class="card__collection clear-fix">
+      <div class="cards cards--three">
+          <img src="./images/wedding.jpg" class="img-responsive" alt="">
+          <span class="cards--three__rect-1">
+            <span class="shadow-1"></span>
+            <a href="/weddings">Weddings</a>
+          </span>
+          <span class="cards--three__rect-2">
+            <span class="shadow-2"></span>
+          </span>
+          <span class="cards--three__circle"></span>
+          <ul class="cards--three__list">
+            <li><i class="fab fa-facebook-f"></i></li>
+            <li><i class="fab fa-twitter"></i></li>
+            <li><i class="fab fa-linkedin-in"></i></li>
+          </ul>
+        </div>
+      </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="card__collection clear-fix">
+      <div class="cards cards--three">
+          <img src="./images/livemusic.jpg" class="img-responsive" alt="">
+          <span class="cards--three__rect-1">
+            <span class="shadow-1"></span>
+            <a href="/live" >Live Music</a>
+          </span>
+          <span class="cards--three__rect-2">
+            <span class="shadow-2"></span>
+          </span>
+          <span class="cards--three__circle"></span>
+          <ul class="cards--three__list">
+            <li><i class="fab fa-facebook-f"></i></li>
+            <li><i class="fab fa-twitter"></i></li>
+            <li><i class="fab fa-linkedin-in"></i></li>
+          </ul>
+        </div>
+      </div>
+      </div>
+</div>
+</div>
+</div>
+
+<!--Reviews/Testimonials-->
+<div class="reviews">
+  <div class="container">
+<h1 class="homeText" >REVIEWS</h1>
+<hr />
+<div id="carouselExampleFade" class="carousel slide carousel-fade" data-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+     <div class="card-deck">
+      <div class="card" style="width: 18rem;">
+        <div class="card-img-top">
+          <img src="./images/mainlogo.png" alt="Card image cap">
+        </div>
+        <div class="card-body">
+          <div class="card-title">
+            <img src="./images/stars.png" alt="stars" />
+          </div>
+          <p class="card-text">Review One. Great Service, fun time, etc</p>
+          <div class="card-footer">
+          <small>-Customer One</small>
+        </div>
+        </div>
+        </div>
+
+        <div class="card" style="width: 18rem;">
+          <div class="card-img-top">
+            <img src="./images/mainlogo.png" alt="Card image cap">
+          </div>
+          <div class="card-body">
+            <div class="card-title">
+              <img src="./images/stars.png" alt="stars" />
+            </div>
+            <p class="card-text">Review Two. Great Service, fun time, etc</p>
+            <div class="card-footer">
+              <small>-Customer Two</small>
+          </div>
+          </div>
+          </div>
+    </div>
+    </div>
+    <!--End of item One-->
+
+    <!--Item Two-->
+    <div class="carousel-item">
+      <div class="card-deck">
+        <div class="card" style="width: 18rem;">
+          <div class="card-img-top">
+            <img src="./images/mainlogo.png" alt="Card image cap">
+          </div>
+          <div class="card-body">
+            <div class="card-title">
+              <img src="./images/stars.png" alt="stars" />
+            </div>
+            <p class="card-text">Review Three. Great Service, fun time, etc</p>
+            <div class="card-footer">
+              <small>-Customer Three</small>
+          </div>
+          </div>
+          </div>
+
+      <div class="card" style="width: 18rem;">
+        <div class="card-img-top">
+        <img src="./images/mainlogo.png" alt="Card image cap">
+        </div>
+        <div class="card-body">
+          <div class="card-title">
+            <img src="./images/stars.png" alt="stars" />
+          </div>
+          <p class="card-text">Review Four. Great Service, fun time, etc</p>
+          <div class="card-footer">
+            <small>-Customer Four</small>
+        </div>
+        </div>
+        </div>
+      </div>
+    </div>
+    <!--End of item two-->
+
+    <!--Item Three-->
+    <div class="carousel-item">
+      <div class="card-deck">
+        <div class="card" style="width: 18rem;">
+        <div class="card-img-top">
+          <img src="./images/mainlogo.png" alt="Card image cap">
+      </div>
+        <div class="card-body">
+          <div class="card-title">
+            <img src="./images/stars.png" alt="stars" />
+          </div>
+          <p class="card-text">Review Five. Great Service, fun time, etc</p>
+          <div class="card-footer">
+            <small>-Customer Five</small>
+        </div>
+        </div>
+        </div>
+
+        <div class="card" style="width: 18rem;">
+          <div class="card-img-top">
+            <img src="./images/mainlogo.png" alt="Card image cap">
+        </div>
+          <div class="card-body">
+            <div class="card-title">
+              <img src="./images/stars.png" alt="stars" />
+            </div>
+            <p class="card-text">Review Six. Great Service, fun time, etc</p>
+            <div class="card-footer">
+              <small>-Customer Six</small>
+          </div>
+          </div>
+          </div>
+          </div>
+    </div>
+    <!--End of item three-->
+  <a class="carousel-control-prev" href="#carouselExampleFade" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="carousel-control-next" href="#carouselExampleFade" role="button" data-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
+</div>
+</div>
+
+
+
+
+<%include partials/footer %>
 
    
-  
+</div>
 </body>
 <% include partials/script %>
+
+
 <script src="./javascripts/home.js"></script>
 
 </html>

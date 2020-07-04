@@ -1,25 +1,30 @@
-body {
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
-  background: url("../images/PurpleBrick.jpg");
+body, html {
+  background: url("../images/PurpleBrickBG.jpg") ;
+  height: 100%;
 }
 
-.nav{
-  background: transparent !important;
-  position: absolute;
+#wrap{
+height: auto !important;
+height: 100%;
+margin: 0 auto -60px;
 }
-
+.scrolling-navbar.scrolled{
+  background: rgba(34,2,29,0.9);
+  margin-top: -5px;
+}
 .navbar{
-  z-index: 1;
+  height: 100px;
   box-shadow: none !important;
+  margin-top: 10px;
+  padding: 20px !important;
 }
 
 .nav-item{
   text-transform: uppercase;
-  font-size: 24px;
+  font-size: 18px;
   text-shadow: 6px -2px 6px #CC00CC, 1px 1px 4px #fff;
   letter-spacing: 5px;
 }
-
 
 .navbar .dropdown-menu {
   background: #fff;
@@ -29,3 +34,40 @@ body {
   text-shadow: none;
 }
 
+.footerContent {
+  background: rgba(34,2,29,0.9);
+  color: #fff;
+  padding: 20px 10px;
+  text-align: center;
+}
+
+#footer{
+  height:60px;
+}
+
+#sticky-footer{
+  background: rgba(56,27,51);
+  padding: 20px;
+}
+.icons i {
+  margin: 5px;
+}
+
+small{
+  color: #fff;
+  font-style: italic;
+  text-transform: uppercase;
+  text-shadow: 6px -2px 6px #CC00CC, 1px 1px 4px #15F4EE;
+}
+
+small a {
+  text-decoration: none;
+  color: #fff;
+}
+
+small a:hover{
+  text-decoration: none;
+  color: #fff;
+  transition: ease-in-out;
+  transform: scale(1.1);
+}

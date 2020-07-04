@@ -1,0 +1,95 @@
+.weddingsSection{
+    margin: 150px 70px;
+    color: #fff;
+}
+
+.text{
+text-shadow: 6px -2px 6px #CC00CC, 1px 1px 4px #15F4EE;
+font-weight: 800;
+font-style: italic;
+margin: 30px 0;
+color: #fff;
+font-size: 60px;
+font-family: 'Permanent Marker', cursive;
+text-align: center;
+}
+
+.btn-white {
+    color: #000 !important;
+    font-family: 'Permanent Marker', cursive;
+    letter-spacing: 2px;
+    background: #fff;
+    padding: 10px;
+    border: 2px solid #fff;
+  }
+
+.weddingsInfo{
+    text-align: center;
+    margin-top: 40px;
+}
+
+.factOne{
+    background: url(../images/wedding1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+    max-width: 400px;
+    height: 250px;
+    transform: rotate(-10deg);
+    border-radius: 0px 20px 0px 20px;
+    margin: 50px 0;
+
+}
+
+.factTwo{
+    background: url(../images/wedding2.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+    max-width: 400px;
+    height: 250px;
+    transform: rotate(-10deg);
+    border-radius: 0px 20px 0px 20px;
+    margin: 50px 0;
+
+}
+
+.factThree{
+    background: url(../images/wedding3.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+    max-width: 400px;
+    height: 250px;
+    transform: rotate(-10deg);
+    border-radius: 0px 20px 0px 20px;
+    margin: 50px 0;
+
+}
+
+.factText{
+    transform: rotate(10deg);
+    padding: 20px;
+    margin: 20px;
+    
+}
+
+.factText h2{
+    font-family: 'Permanent Marker', cursive;
+    text-shadow: 6px -2px 6px #CC00CC, 1px 1px 4px #15F4EE;
+    letter-spacing: 2px;
+}
+
+.factText h3, h4{
+    text-shadow: 6px -2px 6px #CC00CC, 1px 1px 4px #15F4EE;
+    color: #fff;
+}
+
+hr {
+    border: 3px solid #15F4EE;
+    margin: 30px auto;
+    width: 70%;
+}

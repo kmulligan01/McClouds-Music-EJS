@@ -2,12 +2,22 @@
 <html lang="en">
 <head>
     <% include partials/head %>
+    <link rel="stylesheet" href="./stylesheets/calendar.css">
+    <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet"> 
 </head>
 <body>
     
 <%include partials/menu %>
 
-<div class="container-fluid bg-3 text-center">
+<div class="calendar">
+    <h2 class="text">My Events</h2>
+    <div data-tockify-component="calendar" data-tockify-calendar="mccloudsmusic" style="border-top: none;"></div>
+
+</div>
+
+<%include partials/footer %>
+<script data-cfasync="false" data-tockify-script="embed" src="https://public.tockify.com/browser/embed.js"></script>
+
    
   
 </body>

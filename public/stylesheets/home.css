@@ -1,53 +1,347 @@
- /* Style the video: 100% width and height to cover the entire window */
- #myVideo {
-    position: absolute;
-    min-width: 100%;
-    min-height: 80%;
-    opacity: .5;
-    top: 0;
-  }
-  
-  /* Add some content at the bottom of the video/page */
-  .content {
-    position: absolute;
-    background: rgba(245,245,245, 0.5);
-    color: #f1f1f1;
+html,
+body,
+header,
+.view {
+  height: 100%;
+}
+
+.jumbotron {
+  position: relative;
+  background: url(../images/soundbox2.jpg);
+  background-size: cover;
+  clip-path: polygon(50% 0%, 100% 0, 100% 100%, 76% 86%, 47% 100%, 34% 94%, 21% 100%, 10% 88%, 0 100%, 0 0);
+  color: #fff;
+  padding: 300px 100px;
+}
+
+.jumbotron > .overlay {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-image: -webkit-linear-gradient(45deg, rgba(42, 27, 161, 0.7), rgba(38,15,31, 0.7) 100%);
+  z-index: 1; 
+}
+
+.jumbotron > .inner {
+  position: relative;
+  z-index: 2;
+}
+
+.homeImg{
+  box-shadow: -7px -1px 20px 0px rgba(0,0,0,0.75);
+  border: 10px groove #15F4EE;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 300px;
+  height: 400px;
+}
+
+.inner{
+  margin: 0 auto;
+  text-align: center;
+}
+
+.inner h1{
+  font-family: 'Permanent Marker', cursive;
+  font-size: 50px;
+  text-shadow: 6px -2px 6px #CC00CC, 1px 1px 4px #15F4EE;
+}
+
+.btn-white {
+  color: #000 !important;
+  font-family: 'Permanent Marker', cursive;
+  letter-spacing: 2px;
+  background: #fff;
+  padding: 10px;
+  border: 2px solid #fff;
+}
+
+.btn-outline{
+  font-family: 'Permanent Marker', cursive;
+  letter-spacing: 2px;
+  border: 2px solid #fff;
+  padding: 10px;
+  color: #fff;
+}
+
+.homeText{
+  text-shadow: 6px -2px 6px #CC00CC, 1px 1px 4px #15F4EE;
+  font-weight: 800;
+  text-indent: 100px;
+  font-style: italic;
+  margin: 20px 0;
+  color: #fff;
+  font-size: 60px;
+  font-family: 'Permanent Marker', cursive;
+
+}
+
+hr {
+  border-top: 5px solid #15F4EE;
+}
+
+.aboutSection{
+  margin: 100px 0;
+}
+
+.aboutSection h1{
+      color: #fff;
+      margin: 20px 0;
+    }
+
+    .aboutSection p {
+      font-size: 18px;
+      color: #fff;
+    }
+    .neonFlag {
+      width: 100%;
+      max-width: 500px;
+      
+    }
+
+
+
+    .clear-fix:after {
+      display: block;
+      clear: both;
+      content: '';
+   }
+    .img-responsive {
+      max-width: 100%;
+      height: auto;
+   }
+    .card__collection {
+      position: relative;
+      display: block;
+      padding: 10px;
+      font-family: 'Do Hyeon', sans-serif;
+      overflow: hidden;     
+   }
+    .card__collection .cards {
+      width: 300px;
+      height: 400px;
+      display: block;
+      background-size: cover;
+      float: left;
+      border-radius: 15px;
+      position: relative;
+      overflow: hidden;
+      background-position: center;
+      margin: 10px;
+      box-shadow: 6px 9px 25px 0px rgba(36,253,254,1); 
+   }
+
+    .card__collection .cards--three {
+      position: relative;
+      z-index: 10;
+   }
+    .card__collection .cards--three:hover .cards--three__rect-1 {
+      left: 10%;
+   }
+    .card__collection .cards--three:hover .cards--three__rect-1 .shadow-1 {
+      left: -20%;
+   }
+    .card__collection .cards--three:hover .cards--three__rect-2 {
+      left: 60%;
+   }
+    .card__collection .cards--three:hover .cards--three__rect-2:before {
+      left: -100%;
+   }
+    .card__collection .cards--three:hover .cards--three__rect-2:after {
+      left: 80%;
+   }
+    .card__collection .cards--three:hover .cards--three__rect-2 .shadow-2 {
+      left: -10%;
+   }
+    .card__collection .cards--three:hover .cards--three__circle {
+      transform: scale(1);
+   }
+    .card__collection .cards--three:hover .cards--three__circle:before {
+      transform: scale(0.9);
+   }
+    .card__collection .cards--three:hover .cards--three__list li {
+      transform: translateX(0);
+   }
+    .card__collection .cards--three__rect-1 {
+      background: #15F4EE;
+      width: 200px;
+      height: 110px;
+      transform: skewX(-20deg);
+      display: block;
+      position: absolute;
+      top: 73%;
+      opacity: 0.9;
+      left: -100%;
+      z-index: 8;
+      transition: all 0.5s ease-in;
+   }
+    .card__collection .cards--three__rect-1 a{
+      font-size: 20px;
+      color: #fff;
+      transform: skewX(20deg);
+      line-height: 6rem;
+      text-decoration: none;
+      text-transform: uppercase;
+   }
+
+   .card__collection .cards--three__rect-1 a:hover{
+     transform: scale(1.1);
+   }
+    .card__collection .cards--three__rect-1 .shadow-1 {
+      background: #260F1F;
+      width: 230px;
+      height: 100px;
+      display: block;
+      position: absolute;
+      left: -200%;
+      z-index: -1;
+      transition: all 0.3s ease-in;
+   }
+    .card__collection .cards--three__rect-2 {
+      width: 100px;
+      height: 70px;
+      background: #fff;
+      position: absolute;
+      top: 65%;
+      left: 1000%;
+      opacity: 0.9;
+      transform: skewX(-20deg);
+      z-index: 8;
+      transition: all 0.5s ease-in;
+   }
+    .card__collection .cards--three__rect-2::before {
+      content: '';
+      display: block;
+      width: 50px;
+      height: 40px;
+      background: #15F4EE;
+      opacity: 1;
+      position: absolute;
+      left: 500%;
+      top: 10%;
+      transition: all 0.3s ease-in;
+   }
+    .card__collection .cards--three__rect-2::after {
+      content: '';
+      display: block;
+      width: 50px;
+      height: 40px;
+      background: #260F1F;
+      opacity: 1;
+      position: absolute;
+      left: 500%;
+      top: 114%;
+      transition: all 0.5s ease-in;
+      transition-delay: 0.2s;
+   }
+    .card__collection .cards--three__rect-2 .shadow-2 {
+      background: #15F4EE;
+      width: 100%;
+      height: 100%;
+      display: block;
+      position: absolute;
+      top: -10%;
+      left: 500%;
+      transition: all 0.5s ease-in;
+      transition-delay: 0.2s;
+   }
+    .card__collection .cards--three__circle {
+      width: 220px;
+      height: 220px;
+      border-radius: 50%;
+      background: #fff;
+      position: absolute;
+      top: -15%;
+      left: 50%;
+      opacity: 0.9;
+      transform: scale(0);
+      transition: all 0.3s ease;
+   }
+    .card__collection .cards--three__circle:before {
+      content: '';
+      display: block;
+      width: 100%;
+      height: 100%;
+      background: #260F1F;
+      border-radius: 50%;
+      transform: scale(0);
+      transition: all 0.3s ease;
+      transition-delay: 0.2s;
+   }
+    .card__collection .cards--three__list {
+      list-style: none;
+      position: absolute;
+      top: -9px;
+      right: 7px;
+      padding-top: 60px;
+      transition: all 0.4s ease;
+   }
+    .card__collection .cards--three__list li {
+      display: inline-block;
+      margin: 4px;
+      color: #260F1F;
+      width: 25px;
+      height: 25px;
+      border-radius: 50%;
+      background: rgba(21,244,238, .9);
+      text-align: center;
+      line-height: 1.7rem;
+      font-size: 12px;
+      transition: all 0.3s ease;
+      transform: translateX(500%);
+   }
+    .card__collection .cards--three__list li:nth-child(1) {
+      transition-delay: 0.2s;
+   }
+    .card__collection .cards--three__list li:nth-child(2) {
+      transition-delay: 0.3s;
+   }
+    .card__collection .cards--three__list li:nth-child(3) {
+      transition-delay: 0.4s;
+   }
+
+   .reviews{
+     margin: 100px 10px;
+   }
+
+   .carousel{
+    position: relative;
     width: 100%;
-    height: 100%;
+    margin: 0 auto;
+    padding: 80px 60px;
+   }
+
+   .carousel-inner {
+    position: relative;
+    overflow: hidden;
+    margin: 0 auto;
     padding: 20px;
-    top: 0;
-  }
+}
+   .card{
+     background: transparent;
+     color: #fff;
+     text-align: center;
+   }
 
-  .content-text{
-text-align: center;
-  margin-top: 15%;
-  }
+   .card-img-top {
+     border: 2px solid transparent;
+     box-shadow: 6px -2px 6px #CC00CC, 1px 1px 4px #15F4EE;
+     border-radius: 50%;
+     width: 100px;
+     height: 100px;
+     margin: 0 auto;
+   }
+   .card-img-top img{
+     width: 200px;
+     height: 100px;
+     border-radius: 50%;
+   }
 
-  .content-text h1 {
-      font-size: 80px;
-      font-weight: 800;
-      transform: rotate(-10deg);
-      margin: 30px 0;
-     font-family: 'Permanent Marker', cursive;
-    }
+   .card-text{
+     width: 50%;  
+     padding: 20px;
+     margin: 0 auto;
+   }
 
-    .content-text h3 {
-        margin: 100px 0 50px 0;
-        font-style: italic;
-    }
-  
-  /* Style the button used to pause/play the video */
-  #myBtn {
-    width: 200px;
-    font-size: 18px;
-    padding: 10px;
-    border: none;
-    background: #000;
-    color: #fff;
-    cursor: pointer;
-  }
-  
-  #myBtn:hover {
-    background: #ddd;
-    color: black;
-  } 

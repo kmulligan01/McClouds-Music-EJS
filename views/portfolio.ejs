@@ -2,15 +2,89 @@
 <html lang="en">
 <head>
     <% include partials/head %>
+    <link rel="stylesheet" href="./stylesheets/portfolio.css">
+    <link type="text/css" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/1.6.12/css/lightgallery.min.css" /> 
+    <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet"> 
 </head>
 <body>
     
 <%include partials/menu %>
+<div class="portfolio">
+<div class="portfolio section">
+    <div class="container">
+      <div class="top-side">
+        <h2>PORTFOLIO</h2>
+      </div>
+      
+      <div class="filters">
+        <ul>
+          <li class="active" data-filter="*">All</li>
+          <li data-filter=".Karaoke">Karaoke</li>
+          <li data-filter=".Live-Music">Live Music</li>
+          <li data-filter=".Weddings">Weddings</li>
+        </ul>
+      </div>
+      
+      <div class="filters-content">
+        <div class="row grid">
+            <div id="lightgallery">
+          <div class="col-sm-4 all Karaoke">
+         
+            
+                    <a class="item" href="../images/portfolio/pic1.jpg">
+                      <img src="../images/portfolio/pic1.jpg" alt="karaoke" >
+                    </a>
+              
+            </div>
+          
+          <div class="col-sm-4 all Live-Music">
+            
+            <a class="item" href="../images/portfolio/pic6.jpg">
+              <img src="../images/portfolio/pic6.jpg" alt="live music" >
+            </a>
+          </div>
+          <div class="col-sm-4 all Weddings">
+         
+            <a class="item" href="../images/portfolio/pic7.jpg">
+              <img src="../images/portfolio/pic7.jpg" alt="Weddings" >
+            </a>
+          </div>
+          <div class="col-sm-4 all Karaoke">
+            <a class="item" href="../images/portfolio/pic2.jpg">
+              <img src="../images/portfolio/pic2.jpg" alt="karaoke" >
+            </a>
+          </div>
 
-<div class="container-fluid bg-3 text-center">
-   
+          <div class="col-sm-4 all Live-Music">
+            
+            <a class="item" href="../images/portfolio/pic5.jpg">
+              <img src="../images/portfolio/pic5.jpg" alt="live music" >
+            </a>
+          </div>
+
+          <div class="col-sm-4 all Weddings">
+         
+            <a class="item" href="../images/portfolio/pic7.jpg">
+              <img src="../images/wedding.jpg" alt="Weddings" >
+            </a>
+          </div>
+          
+        </div>
+      </div>
+      
+    </div>
+</div>
+</div>
+</div>
+
+<%include partials/footer %>
+
   
 </body>
 <% include partials/script %>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js"> </script>
+<script defer type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/1.6.12/js/lightgallery-all.min.js"></script>
+<script src="./javascripts/portfolio.js"></script>
+
 
 </html>

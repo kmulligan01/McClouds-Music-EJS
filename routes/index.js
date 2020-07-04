@@ -11,6 +11,15 @@ router.get('/services', function(req, res, next) {
   res.render('services', {page:'Services', menuId:'services'});
 });
 
+router.get('/karaoke', function(req, res, next) {
+  res.render('karaoke', {page:'Karaoke', menuId:'karaoke'});
+});
+router.get('/live', function(req, res, next) {
+  res.render('live', {page:'Live', menuId:'live'});
+});
+router.get('/weddings', function(req, res, next) {
+  res.render('weddings', {page:'Weddings', menuId:'weddings'});
+});
 router.get('/portfolio', function(req, res, next) {
   res.render('portfolio', {page:'Portfolio', menuId:'portfolio'});
 });
